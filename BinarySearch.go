@@ -9,7 +9,7 @@ func binarySearch(arr []int, x int) (bool, int) {
 		mid := int((start + end) / 2)
 		if arr[mid] == x {
 			return true, mid
-		} else if x > mid {
+		} else if x > arr[mid] {
 			start = mid + 1
 		} else {
 			end = mid - 1
